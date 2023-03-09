@@ -1,23 +1,78 @@
-name: Waka 
-Readmeon:
-schedule:
-       # Runs every 4 hours    
-  - cron: '0 */4 * * *'  
-    workflow_dispatch:
-      jobs:  
-        update-readme:    
-          name: Update Readme with Metrics    
-    runs-on: ubuntu-latest    
-    steps:      
-      - uses: anmol098/waka-readme-stats@master        
-    with:
-    WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-    SHOW_OS: "True"
-    SHOW_PROJECTS: "True"          
-    SHOW_PROFILE_VIEWS: "False"
-    SHOW_EDITORS: "False"
-    SHOW_LANGUAGE_PER_REPO: "True"
-    SHOW_LOC_CHART: "False"
-    SHOW_LINES_OF_CODE: "True"
-    SHOW_SHORT_INFO: "False"
-                                                                              
+name: "Waka - Readme"
+author: Athul Cyriac Ajay
+description: "Add a Wakatime Coding Activity graph in your Readme"
+
+inputs:
+  GH_TOKEN:
+    description: "GitHub access token with Repo scope"
+    default: ${{ github.token }}
+    required: true
+
+  WAKATIME_API_KEY:
+    description: "Your Wakatime/Wakapi/Hakatime API Key"
+    required: true
+
+  API_BASE_URL:
+    description: "Alternative API base URL when using a third-party WakaTime-ish backend"
+    default: "https://wakatime.com/api"
+    required: false
+
+  REPOSITORY:
+    description: "Your GitHub repository"
+    default: ${{ github.repository }}
+    required: false
+
+  COMMIT_MESSAGE:
+    description: "Add a commit message of your choice"
+    default: "Updated waka-readme graph with new metrics"
+    required: false
+
+  # content tweaks
+
+  SHOW_TITLE:
+    description: "Displays the week number and days in Readme as title"
+    default: "false"
+    required: false
+
+  SECTION_NAME:
+    description: "Section name for data to appear in readme"
+    required: false
+    default: "waka"
+
+  BLOCKS:
+    description: "Add the progress blocks of your choice"
+    default: "░▒▓█"
+    required: false
+
+  TIME_RANGE:
+    description: "Time range of the queried statistics"
+    default: "last_7_days"
+    required: false
+
+  LANG_COUNT:
+    description: "Maximum number of languages to be shown"
+    default: "5"
+    required: false
+
+  SHOW_TIME:
+    description: "Displays the amount of time spent for each language"
+    default: "true"
+    required: false
+
+  SHOW_TOTAL:
+    description: "Displays total coding time"
+    default: "false"
+    required: false
+
+  SHOW_MASKED_TIME:
+    description: "Displays total coding time including unclassified languages"
+    default: "false"
+    required: false
+
+runs:
+  using: "docker"
+  image: "dockerfile"
+
+branding:
+  icon: "info"
+  color: "blue"
