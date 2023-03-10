@@ -1,3 +1,4 @@
+<a href="https://wakatime.com"><img src="https://wakatime.com/share/@hamedprog/d0571dc4-bb00-402e-a705-f907d12f3910.png" /></a>
 
 [![wakatime](https://wakatime.com/badge/user/bfde19da-b988-4de7-a13e-78c42df235f6.svg)](https://wakatime.com/@bfde19da-b988-4de7-a13e-78c42df235f6)
 
