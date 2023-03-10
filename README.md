@@ -11,4 +11,6 @@ Other             624 hrs 51 mins >>>>>>>>>----------------   35.90 %
 
 <!--END_SECTION:waka-->
 
-<figure><embed src="https://wakatime.com/share/@hamedprog/aa5871bb-f75e-44aa-b85b-452eb89eecc7.svg"></embed></figure>
+<a href="https://wakatime.com"><img src="https://wakatime.com/share/@hamedprog/49a4ad45-2aaf-48f8-987f-b71adfb4cfe9.png" /></a>
+
+<a href="https://wakatime.com"><img src="https://wakatime.com/share/@hamedprog/d5bfea3b-3f46-482a-8398-beaaaed2ab92.png" /></a>
