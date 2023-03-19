@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="https://wakatime.com/share/@hamedprog/4fb1a205-e65c-4da8-b13b-06310c999d2a.svg">
-  <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="https://wakatime.com/share/@hamedprog/4fb1a205-e65c-4da8-b13b-06310c999d2a.svg">
+  <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="https://wakatime.com/share/@hamedprog/c47482b7-77dc-443b-b780-6996010be592.svg">
 </picture>
 
 
