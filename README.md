@@ -9,5 +9,12 @@
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="https://wakatime.com/share/@hamedprog/4fb1a205-e65c-4da8-b13b-06310c999d2a.svg">
-  <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="https://wakatime.com/share/@hamedprog/cb6b4998-2a19-4024-8a81-2dc565d24cab.svg">
+  <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="https://wakatime.com/share/@hamedprog/9abee52e-7058-49ae-8bd7-79e43953e6b9.svg">
+</picture>
+
+
+
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://wakatime.com/share/@hamedprog/4fb1a205-e65c-4da8-b13b-06310c999d2a.svg">
+  <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode."  src="https://wakatime.com/share/@hamedprog/b226e0f7-5f3f-4be6-95f6-64496494185c.svg" width="720" height="500">
 </picture>
