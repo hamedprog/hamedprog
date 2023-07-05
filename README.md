@@ -16,5 +16,5 @@
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="https://wakatime.com/share/@hamedprog/4fb1a205-e65c-4da8-b13b-06310c999d2a.svg">
-  <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode."  src="https://wakatime.com/share/@hamedprog/b226e0f7-5f3f-4be6-95f6-64496494185c.svg" width="720" height="500">
+  <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode."  src="https://wakatime.com/share/@hamedprog/1e8d59df-706e-4458-a774-6e91e1607e60.svg" width="720" height="500">
 </picture>
