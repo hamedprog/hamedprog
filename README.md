@@ -7,10 +7,10 @@
 
 [![hamed's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=hamedprog&layout=compact&theme=radical&hide=Other)](https://github.com/anuraghazra/github-readme-stats)
 ### ACTIVITY LAST YEAR
-<picture>
+<figure>
   <source media="(prefers-color-scheme: light)" srcset="https://wakatime.com/share/@hamedprog/4fb1a205-e65c-4da8-b13b-06310c999d2a.svg">
   <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="https://wakatime.com/share/@hamedprog/9abee52e-7058-49ae-8bd7-79e43953e6b9.svg">
-</picture>
+</figure>
 
 
 
