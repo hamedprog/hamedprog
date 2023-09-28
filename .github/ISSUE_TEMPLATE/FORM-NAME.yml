@@ -4,4 +4,4 @@ title: "[Feat]: <title>"
 labels: ["dev::feat", "product::arium", "team::backend"]
 
 body:
-- type: textarea
+- type: textarea 
