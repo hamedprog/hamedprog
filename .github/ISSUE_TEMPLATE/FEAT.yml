@@ -2,7 +2,7 @@
 description: A new feature
 labels: ["dev::feat", "product::arium", "team::backend"]
 name: Feat
-title: ""
+# title: ""
 
 body:
   - type: textarea
