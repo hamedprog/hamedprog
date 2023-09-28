@@ -7,7 +7,7 @@ title: "[Feat]: <title>"
 body:
   - type: textarea
     id: description
-    # attributes:
-    #   label: Description
+    attributes:
+      label: Description
     validations:
       required: true
