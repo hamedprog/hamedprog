@@ -4,3 +4,6 @@ title: "[Feat]: <title>"
 labels: ["dev::feat", "product::arium", "team::backend"]
 projects: ["octo-org/1", "octo-org/44"]
 body:
+- type: textarea
+  attributes:
+    label: "What's wrong?"
