@@ -10,7 +10,10 @@ body:
     validations:
       required: true
 description: a new feature
-labels: ["dev::feat", "product::arium", "team::backend"]
+labels:
+  - dev::feat
+  - product::arium
+  - team::backend
 name: feat
 # projects: []
 # title: ""
