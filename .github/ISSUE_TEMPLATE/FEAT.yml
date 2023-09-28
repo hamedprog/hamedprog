@@ -1,13 +1,14 @@
 # yaml-language-server: $schema=https://goreleaser.com/static/schema.json
-description: A new feature
-labels: ["dev::feat", "product::arium", "team::backend"]
-name: Feat
-# title: ""
 
+# assignees:
 body:
   - type: textarea
-    id: description
     attributes:
       label: Description
     validations:
       required: true
+description: a new feature
+labels: ["dev::feat", "product::arium", "team::backend"]
+name: feat
+# projects:
+# title:

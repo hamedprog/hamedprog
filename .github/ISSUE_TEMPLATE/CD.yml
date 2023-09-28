@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://goreleaser.com/static/schema.json
+
+# assignees:
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+    validations:
+      required: true
+description: changes to our cd configuration files and scripts
+labels: ["dev::cd", "product::arium", "team::backend"]
+name: cd
+# projects:
+# title:
