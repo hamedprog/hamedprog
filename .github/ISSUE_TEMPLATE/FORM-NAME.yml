@@ -1,7 +1,7 @@
----
-about: "A new feature"
-assignees: "smhmayboudi"
-labels: "dev::feat"
-name: "Feat"
-title: "[FEAT] <title>"
----
+name: Feat
+description: A new feature
+title: "[Feat]: <title>"
+labels: ["dev::feat", "product::arium", "team::backend"]
+
+body:
+- type: textarea
