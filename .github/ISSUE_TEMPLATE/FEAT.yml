@@ -1,14 +1,16 @@
-# yaml-language-server: $schema=https://goreleaser.com/static/schema.json
+## yaml-language-server: $schema=https://goreleaser.com/static/schema.json
+# read more: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
 
-# assignees:
+# assignees: []
 body:
-  - type: textarea
-    attributes:
+  - attributes:
       label: Description
+    id: description
+    type: textarea
     validations:
       required: true
 description: a new feature
 labels: ["dev::feat", "product::arium", "team::backend"]
 name: feat
-# projects:
-# title:
+# projects: []
+# title: ""
