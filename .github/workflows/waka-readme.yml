@@ -1,23 +1,18 @@
-name: Work Stats Readme
-
+name: Metrics
 on:
+  # Schedule daily updates
+  schedule: [{cron: "0 0 * * *"}]
+  # (optional) Run workflow manually
   workflow_dispatch:
-  schedule:
-    # Runs every 2 hours
-    - cron: "0 */2 * * *"
-
+  # (optional) Run workflow when pushing on master/main
+  push: {branches: ["master", "main"]}
 jobs:
-  update-readme:
-    name: Update this repo's README
+  github-metrics:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: athul/waka-readme@master
+      - uses: lowlighter/metrics@latest
         with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          SHOW_TITLE: true
-          BLOCKS: ->
-          TIME_RANGE: all_time
-          SHOW_TIME: true
-          SHOW_TOTAL: true
-          SHOW_MASKED_TIME: true
-          LANG_COUNT: 10
+          token: ${{ secrets.METRICS_TOKEN }}
+  
