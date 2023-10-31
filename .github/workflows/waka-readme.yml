@@ -22,6 +22,6 @@ jobs:
           token: NOT_NEEDED
           base: ""
           plugin_topics: yes
-          plugin_topics_limit: 0
+          plugin_topics_limit: 30
           plugin_topics_mode: icons
   
