@@ -1,0 +1,8 @@
+.profile
+Import-Module -Name Terminal-Icons
+Import-Module PSReadLine
+oh-my-posh init pwsh | Invoke-Expression
+
+commands:
+
+
