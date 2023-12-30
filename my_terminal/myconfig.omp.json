@@ -21,6 +21,7 @@
             "style": "plain",
             "foreground": "#26C6DA",
             "background": "#546E7A",
+            "powerline_symbol": "",
             "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}",
             "properties": {
               "macos": "mac"
