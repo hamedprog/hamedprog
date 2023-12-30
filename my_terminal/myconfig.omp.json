@@ -9,23 +9,22 @@
         "segments": [
           
           {
+            "type": "os",
+            "style": "plain",
+            "foreground": "#26C6DA",
+            "background": "#546E7A",
+            "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}",
+            "properties": {
+              "macos": "mac"
+            }
+          },
+          {
               "type": "session",
               "style": "diamond",
               "foreground": "#ffffff",
               "background": "#c386f1",
               "leading_diamond": "",
               "template": "{{ if .SSHSession }} {{ end }}{{ .UserName }}"
-          },
-          {
-            "type": "os",
-            "style": "plain",
-            "foreground": "#26C6DA",
-            "background": "#546E7A",
-            "powerline_symbol": "",
-            "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}",
-            "properties": {
-              "macos": "mac"
-            }
           },
           {
               "type": "shell",
