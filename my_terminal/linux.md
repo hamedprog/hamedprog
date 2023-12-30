@@ -12,4 +12,7 @@ install oh my posh
 install substring search:
 https://github.com/marlonrichert/zsh-autocomplete
 
-add config file
+add config file to zshrc
+```
+eval "$(oh-my-posh init zsh --config ~/myconfig.omp.json)"
+```
