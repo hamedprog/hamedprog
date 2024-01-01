@@ -1,101 +1,101 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-  "version": 2,
-  "palette": {
-        "white": "#FFFFFF",
-        "os": "#ACB0BE",
-        "pink": "#F5BDE6",
-        "lavender": "#B7BDF8",
-        "blue":  "#8AADF4",
-        "wight": "#FFFFFF",
-        "text": "#494D64",
-        "teal_blue": "#33658A"
-  },
-  "final_space": true,
   "blocks": [
     {
-      "type": "prompt",
       "alignment": "left",
       "segments": [
         {
-          "background": "p:blue",
+          "background": "#524666",
           "foreground": "p:wight",
-          "powerline_symbol": "\ue0b4",
-          "leading_diamond": "\ue0b6",
+          "leading_diamond": "",
+          "powerline_symbol": "",
           "properties": {
             "macos": "mac"
           },
           "style": "diamond",
-          "trailing_diamond": "\ue0b4",
-          "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}} \ue0b1",
+          "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
+          "trailing_diamond": "",
           "type": "os"
         },
         {
-          "background": "p:blue",
-          "foreground": "p:text",
-          "powerline_symbol": "\ue0b4",
-          "type": "session",
+          "background": "#736B99",
+          "foreground": "p:wight",
+          "powerline_symbol": "",
           "style": "diamond",
-          "template": "{{ if .SSHSession }} {{ end }}{{ .UserName }} "
+          "template": "{{ if .SSHSession }} {{ end }}{{ .UserName }} ",
+          "type": "session"
         },
         {
-          "type": "shell",
-          "style": "diamond",
-          "foreground": "#ffffff",
-          "background": "#0077c2",
-          "template": " {{ .Name }} ",
+          "background": "#9094CC",
+          "foreground": "p:wight",
           "properties": {
             "mapped_shell_names": {
               "pwsh": "PS"
             }
-          }
+          },
+          "style": "diamond",
+          "template": " {{ .Name }} ",
+          "type": "shell"
         },
         {
-          "type": "path",
-          "style": "diamond",
-          "powerline_symbol": "\ue0b0",
-          "background": "p:pink",
-          "foreground": "p:text",
-          "template": " {{ .Path }} ",
+          "background": "#ADBDFF",
+          "foreground": "p:wight",
+          "powerline_symbol": "",
           "properties": {
             "style": "full"
-          }
-        },
-        {
-          "background": "p:lavender",
-          "foreground": "p:text",
-          "type": "git",
-          "style": "diamond",
-          "powerline_symbol": "\ue0b0",
-          "properties": {
-              "branch_icon": "\ue725 ",
-              "cherry_pick_icon": "\ue29b ",
-              "commit_icon": "\uf417 ",
-              "fetch_status": false,
-              "fetch_upstream_icon": false,
-              "merge_icon": "\ue727 ",
-              "no_commits_icon": "\uf0c3 ",
-              "rebase_icon": "\ue728 ",
-              "revert_icon": "\uf0e2 ",
-              "tag_icon": "\uf412 "
           },
-          "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} "
+          "style": "diamond",
+          "template": " {{ .Path }} ",
+          "type": "path"
         },
         {
-          "background": "p:teal_blue",
-          "foreground": "p:white",
-          "type": "executiontime",
+          "background": "#B38EBE",
+          "foreground": "p:wight",
+          "powerline_symbol": "",
+          "properties": {
+            "branch_icon": " ",
+            "cherry_pick_icon": " ",
+            "commit_icon": " ",
+            "fetch_status": false,
+            "fetch_upstream_icon": false,
+            "merge_icon": " ",
+            "no_commits_icon": " ",
+            "rebase_icon": " ",
+            "revert_icon": " ",
+            "tag_icon": " "
+          },
           "style": "diamond",
-          "powerline_symbol": "\ue0b0",
-          "template": " {{ .FormattedMs }}",
-          "trailing_diamond": "\ue0b4",
+          "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
+          "type": "git"
+        },
+        {
+          "background": "#BF5F97",
+          "foreground": "p:wight",
+          "powerline_symbol": "",
           "properties": {
             "always_enabled": true,
             "style": "austin",
             "threshold": 500
-          }
+          },
+          "style": "diamond",
+          "template": " {{ .FormattedMs }}",
+          "trailing_diamond": "",
+          "type": "executiontime"
         }
-      ]
+      ],
+      "type": "prompt"
     }
-  ]
+  ],
+  "final_space": true,
+  "palette": {
+    "blue": "#8AADF4",
+    "lavender": "#B7BDF8",
+    "os": "#ACB0BE",
+    "pink": "#F5BDE6",
+    "teal_blue": "#33658A",
+    "text": "#494D64",
+    "white": "#FFFFFF",
+    "wight": "#FFFFFF"
+  },
+  "version": 2
 }
