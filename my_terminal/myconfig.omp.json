@@ -36,16 +36,14 @@
           "powerline_symbol": "\ue0b4",
           "type": "session",
           "style": "diamond",
-          "trailing_diamond": "\ue0b4",
-          "template": "{{ if .SSHSession }} {{ end }}{{ .UserName }}"
+          "template": "{{ if .SSHSession }} {{ end }}{{ .UserName }} "
         },
         {
           "type": "shell",
           "style": "diamond",
           "foreground": "#ffffff",
           "background": "#0077c2",
-          "trailing_diamond": "\ue0b4",
-          "template": " {{ .Name }}",
+          "template": " {{ .Name }} ",
           "properties": {
             "mapped_shell_names": {
               "pwsh": "PS"
@@ -58,8 +56,7 @@
           "powerline_symbol": "\ue0b0",
           "background": "p:pink",
           "foreground": "p:text",
-          "trailing_diamond": "\ue0b4",
-          "template": " {{ .Path }}",
+          "template": " {{ .Path }} ",
           "properties": {
             "style": "full"
           }
@@ -82,8 +79,7 @@
               "revert_icon": "\uf0e2 ",
               "tag_icon": "\uf412 "
           },
-          "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}",
-          "trailing_diamond": "\ue0b4"
+          "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} "
         },
         {
           "background": "p:teal_blue",
