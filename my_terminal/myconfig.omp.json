@@ -5,7 +5,7 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#524666",
+          "background": "#03071E",
           "foreground": "p:wight",
           "leading_diamond": "",
           "powerline_symbol": "",
@@ -13,20 +13,19 @@
             "macos": "mac"
           },
           "style": "diamond",
-          "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
-          "trailing_diamond": "",
+          "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
           "type": "os"
         },
         {
-          "background": "#736B99",
+          "background": "#370617",
           "foreground": "p:wight",
           "powerline_symbol": "",
           "style": "diamond",
-          "template": "{{ if .SSHSession }} {{ end }}{{ .UserName }} ",
+          "template": " {{ if .SSHSession }} {{ end }}{{ .UserName }} ",
           "type": "session"
         },
         {
-          "background": "#9094CC",
+          "background": "#6A040F",
           "foreground": "p:wight",
           "properties": {
             "mapped_shell_names": {
@@ -38,7 +37,7 @@
           "type": "shell"
         },
         {
-          "background": "#ADBDFF",
+          "background": "#9D0208",
           "foreground": "p:wight",
           "powerline_symbol": "",
           "properties": {
@@ -49,7 +48,7 @@
           "type": "path"
         },
         {
-          "background": "#B38EBE",
+          "background": "#D00000",
           "foreground": "p:wight",
           "powerline_symbol": "",
           "properties": {
@@ -69,7 +68,7 @@
           "type": "git"
         },
         {
-          "background": "#BF5F97",
+          "background": "#DC2F02",
           "foreground": "p:wight",
           "powerline_symbol": "",
           "properties": {
