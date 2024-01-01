@@ -1,6 +1,16 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "version": 2,
+  "palette": {
+        "white": "#FFFFFF",
+        "os": "#ACB0BE",
+        "pink": "#F5BDE6",
+        "lavender": "#B7BDF8",
+        "blue":  "#8AADF4",
+        "wight": "#FFFFFF",
+        "text": "#494D64",
+        "teal_blue": "#33658A"
+  },
   "final_space": true,
   "blocks": [
     {
@@ -8,22 +18,24 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#546E7A",
-          "foreground": "#26C6DA",
+          "background": "p:blue",
+          "foreground": "p:wight",
+          "powerline_symbol": "\ue0b4",
+          "leading_diamond": "\ue0b6",
           "properties": {
             "macos": "mac"
           },
           "style": "diamond",
-          "leading_diamond": "",
           "trailing_diamond": "\ue0b4",
-          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} \ue0b1",
+          "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}} \ue0b1",
           "type": "os"
         },
         {
+          "background": "p:blue",
+          "foreground": "p:text",
+          "powerline_symbol": "\ue0b4",
           "type": "session",
           "style": "diamond",
-          "foreground": "#ffffff",
-          "background": "#c386f1",
           "trailing_diamond": "\ue0b4",
           "template": "{{ if .SSHSession }} {{ end }}{{ .UserName }}"
         },
@@ -33,6 +45,7 @@
           "foreground": "#ffffff",
           "background": "#0077c2",
           "trailing_diamond": "\ue0b4",
+          "template": " {{ .Name }}",
           "properties": {
             "mapped_shell_names": {
               "pwsh": "PS"
@@ -43,21 +56,42 @@
           "type": "path",
           "style": "diamond",
           "powerline_symbol": "\ue0b0",
-          "foreground": "#FBEAEB",
-          "background": "#2F3C7E",
+          "background": "p:pink",
+          "foreground": "p:text",
           "trailing_diamond": "\ue0b4",
-          "template": " {{ .Path }} ",
+          "template": " {{ .Path }}",
           "properties": {
             "style": "full"
           }
         },
         {
+          "background": "p:lavender",
+          "foreground": "p:text",
+          "type": "git",
+          "style": "diamond",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+              "branch_icon": "\ue725 ",
+              "cherry_pick_icon": "\ue29b ",
+              "commit_icon": "\uf417 ",
+              "fetch_status": false,
+              "fetch_upstream_icon": false,
+              "merge_icon": "\ue727 ",
+              "no_commits_icon": "\uf0c3 ",
+              "rebase_icon": "\ue728 ",
+              "revert_icon": "\uf0e2 ",
+              "tag_icon": "\uf412 "
+          },
+          "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}",
+          "trailing_diamond": "\ue0b4"
+        },
+        {
+          "background": "p:teal_blue",
+          "foreground": "p:white",
           "type": "executiontime",
           "style": "diamond",
           "powerline_symbol": "\ue0b0",
-          "foreground": "#ffffff",
-          "background": "#8800dd",
-          "template": " {{ .FormattedMs }} ",
+          "template": " {{ .FormattedMs }}",
           "trailing_diamond": "\ue0b4",
           "properties": {
             "always_enabled": true,
