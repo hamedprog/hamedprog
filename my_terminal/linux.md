@@ -12,6 +12,8 @@ install oh my posh
 install substring search:
 https://github.com/marlonrichert/zsh-autocomplete
 
+https://dev.to/rossijonas/how-to-set-up-history-based-autocompletion-in-zsh-k7o
+
 add config file to zshrc
 ```
 eval "$(oh-my-posh init zsh --config https://raw.githubusercontent.com/hamedprog/hamedprog/main/my_terminal/myconfig.omp.json)"
