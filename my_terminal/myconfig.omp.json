@@ -5,8 +5,8 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#03071E",
-          "foreground": "p:wight",
+          "background": "p:first",
+          "foreground": "p:white",
           "leading_diamond": "",
           "powerline_symbol": "",
           "properties": {
@@ -17,16 +17,16 @@
           "type": "os"
         },
         {
-          "background": "#370617",
-          "foreground": "p:wight",
+          "background": "p:second",
+          "foreground": "p:white",
           "powerline_symbol": "",
           "style": "diamond",
           "template": " {{ if .SSHSession }} {{ end }}{{ .UserName }} ",
           "type": "session"
         },
         {
-          "background": "#6A040F",
-          "foreground": "p:wight",
+          "background": "p:third",
+          "foreground": "p:white",
           "properties": {
             "mapped_shell_names": {
               "pwsh": "PS"
@@ -37,8 +37,8 @@
           "type": "shell"
         },
         {
-          "background": "#9D0208",
-          "foreground": "p:wight",
+          "background": "p:forth",
+          "foreground": "p:white",
           "powerline_symbol": "",
           "properties": {
             "style": "full"
@@ -48,8 +48,8 @@
           "type": "path"
         },
         {
-          "background": "#D00000",
-          "foreground": "p:wight",
+          "background": "p:fifth",
+          "foreground": "p:white",
           "powerline_symbol": "",
           "properties": {
             "branch_icon": " ",
@@ -68,8 +68,8 @@
           "type": "git"
         },
         {
-          "background": "#DC2F02",
-          "foreground": "p:wight",
+          "background": "p:sixth",
+          "foreground": "p:white",
           "powerline_symbol": "",
           "properties": {
             "always_enabled": true,
@@ -87,14 +87,13 @@
   ],
   "final_space": true,
   "palette": {
-    "blue": "#8AADF4",
-    "lavender": "#B7BDF8",
-    "os": "#ACB0BE",
-    "pink": "#F5BDE6",
-    "teal_blue": "#33658A",
-    "text": "#494D64",
-    "white": "#FFFFFF",
-    "wight": "#FFFFFF"
+    "first": "#F72585",
+    "second":"#B5179E",
+    "third": "#7209B7",
+    "forth": "#560BAD",
+    "fifth": "#480CA8",
+    "sixth": "#3F37C9",
+    "white": "#FFFFFF"
   },
   "version": 2
 }
