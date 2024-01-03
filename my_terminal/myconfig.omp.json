@@ -87,12 +87,12 @@
   ],
   "final_space": true,
   "palette": {
-    "first": "#F72585",
-    "second":"#B5179E",
-    "third": "#7209B7",
-    "forth": "#560BAD",
-    "fifth": "#480CA8",
-    "sixth": "#3F37C9",
+    "first": "#264653",
+    "second":"#287271",
+    "third": "#2A9D8F",
+    "forth": "#E9C46A",
+    "fifth": "#F4A261",
+    "sixth": "#E76F51",
     "white": "#FFFFFF"
   },
   "version": 2
