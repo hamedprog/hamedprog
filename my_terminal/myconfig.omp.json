@@ -80,6 +80,17 @@
           "template": " {{ .FormattedMs }}",
           "trailing_diamond": "",
           "type": "executiontime"
+        },
+        {
+          "background": "p:seventh",
+          "foreground": "p:white",
+          "properties": {
+            "time_format": "15:04"
+          },
+          "style": "diamond",
+          "template": " {{ .CurrentDate | date .Format }}",
+          "trailing_diamond": "",
+          "type": "time"
         }
       ],
       "type": "prompt"
@@ -93,6 +104,7 @@
     "forth": "#E9C46A",
     "fifth": "#F4A261",
     "sixth": "#E76F51",
+    "seventh": "#ff0000",
     "white": "#FFFFFF"
   },
   "version": 2
