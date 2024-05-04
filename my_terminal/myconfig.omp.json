@@ -7,7 +7,7 @@
         {
           "background": "p:first",
           "foreground": "p:white",
-          "leading_diamond": "",
+          "leading_diamond": "\u256d\u2500\ue0b6",
           "powerline_symbol": "",
           "properties": {
             "macos": "mac"
@@ -48,26 +48,6 @@
           "type": "path"
         },
         {
-          "background": "p:fifth",
-          "foreground": "p:white",
-          "powerline_symbol": "",
-          "properties": {
-            "branch_icon": " ",
-            "cherry_pick_icon": " ",
-            "commit_icon": " ",
-            "fetch_status": false,
-            "fetch_upstream_icon": false,
-            "merge_icon": " ",
-            "no_commits_icon": " ",
-            "rebase_icon": " ",
-            "revert_icon": " ",
-            "tag_icon": " "
-          },
-          "style": "diamond",
-          "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
-          "type": "git"
-        },
-        {
           "background": "p:sixth",
           "foreground": "p:white",
           "powerline_symbol": "",
@@ -91,6 +71,51 @@
           "template": " {{ .CurrentDate | date .Format }}",
           "trailing_diamond": "",
           "type": "time"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "segments": [
+        {
+          "background": "#17D7A0",
+          "foreground": "#011627",
+          "leading_diamond": "\ue0b2",
+          "properties": {
+            "branch_icon": "\ue725 ",
+            "fetch_stash_count": true,
+            "fetch_status": true,
+            "fetch_upstream_icon": true,
+            "fetch_worktree_count": true
+          },
+          "style": "diamond",
+          "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
+          "trailing_diamond": "\ue0b0",
+          "type": "git"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#21c7c7",
+          "style": "plain",
+          "template": "\u2570\u2500",
+          "type": "text"
+        },
+        {
+          "foreground": "#e0f8ff",
+          "foreground_templates": ["{{ if gt .Code 0 }}#ef5350{{ end }}"],
+          "properties": {
+            "always_enabled": true
+          },
+          "style": "plain",
+          "template": "\ue285\ueab6 ",
+          "type": "status"
         }
       ],
       "type": "prompt"
