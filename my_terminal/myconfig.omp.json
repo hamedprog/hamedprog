@@ -57,8 +57,7 @@
             "threshold": 500
           },
           "style": "diamond",
-          "template": " {{ .FormattedMs }}",
-          "trailing_diamond": "",
+          "template": " {{ .FormattedMs }} ",
           "type": "executiontime"
         },
         {
@@ -102,7 +101,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#21c7c7",
+          "foreground": "p:first",
           "style": "plain",
           "template": "\u2570\u2500",
           "type": "text"
