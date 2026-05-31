@@ -6,6 +6,7 @@
 <!-- <a href="https://wakatime.com"><img src="https://wakatime.com/share/@hamedprog/3f51a2a6-8e68-480b-9d2c-c3f7fe1ce199.png" width="400" height="300"/></a> -->
 
 [![hamed's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=hamedprog&layout=compact&theme=radical&hide=Other)](https://github.com/anuraghazra/github-readme-stats)
+[![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ffflabs)](https://github.com/anuraghazra/github-readme-stats)
 
 ![----------](https://user-images.githubusercontent.com/53900/182992715-aa63e421-170b-41cf-8f95-82fe4b0846c2.png)
 
